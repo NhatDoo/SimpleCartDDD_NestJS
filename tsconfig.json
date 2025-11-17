@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",                     // NestJS + Prisma CJS chạy ổn định
+    "moduleResolution": "node",               // chuẩn Node
+    "resolvePackageJsonExports": false,       // tắt, tránh lỗi TypeScript
+    "esModuleInterop": true,                  // bắt buộc để import default modules
+    "allowSyntheticDefaultImports": true,     // hỗ trợ import default từ CJS
+    "target": "ES2021",                       // Node 22 support ES2021
+    "experimentalDecorators": true,           // bắt buộc NestJS
+    "emitDecoratorMetadata": true,            // bắt buộc NestJS
+    "declaration": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "noFallthroughCasesInSwitch": false,
+    "isolatedModules": false                    // tắt, vì NodeCommonJS không cần
+  }
+}
